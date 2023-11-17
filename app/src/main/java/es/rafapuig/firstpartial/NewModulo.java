@@ -12,8 +12,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.List;
-
 import es.rafapuig.firstpartial.model.Ciclo;
 import es.rafapuig.firstpartial.model.Curso;
 import es.rafapuig.firstpartial.model.Modulo;
@@ -76,7 +74,7 @@ public class NewModulo extends AppCompatActivity {
             }
         });
 
-        Button btnSave = findViewById(R.id.btnSave);
+        Button btnSave = findViewById(R.id.btnPrevious);
         btnSave.setOnClickListener(v -> saveData());
 
 

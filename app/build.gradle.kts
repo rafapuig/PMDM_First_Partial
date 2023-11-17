@@ -6,6 +6,10 @@ android {
     namespace = "es.rafapuig.firstpartial"
     compileSdk = 34
 
+    buildFeatures {
+        viewBinding = true;
+    }
+
     defaultConfig {
         applicationId = "es.rafapuig.firstpartial"
         minSdk = 26
