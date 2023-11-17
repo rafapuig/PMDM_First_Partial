@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">First Partial</string>
+    <string-array name="studies">
+        <item>Desarrollo de Aplicaciones Multimedia</item>
+        <item>Administración de Sistemas Informáticos</item>
+    </string-array>
+</resources>
