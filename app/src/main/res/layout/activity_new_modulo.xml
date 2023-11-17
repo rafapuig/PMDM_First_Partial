@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".NewModulo">
+    tools:context=".NewModuloActivity">
 
     <TextView
         android:id="@+id/textView6"
@@ -52,6 +52,7 @@
             android:textStyle="bold" />
 
         <RadioGroup
+            android:id="@+id/rbgCourseLevel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -129,12 +130,12 @@
             android:layout_height="wrap_content"
             android:paddingTop="20dp"
             android:paddingBottom="10dp"
-            android:text="Teacher"
+            android:text="Teacher:"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/editTeacherName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -160,18 +161,18 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnPrevious"
+                android:id="@+id/btnSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Save" />
 
             <Button
-                android:id="@+id/btnNext"
+                android:id="@+id/btnCancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Cancel" />
+                android:text="Back" />
 
         </LinearLayout>
 

@@ -32,14 +32,15 @@
             android:paddingTop="20dp"
             android:paddingBottom="10dp"
             android:text="Studies:"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tvStudies"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Studies name" />
+            android:text="Studies name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvCourseLevel"
@@ -48,8 +49,7 @@
             android:paddingTop="20dp"
             android:paddingBottom="10dp"
             android:text="Course Level:"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -80,14 +80,15 @@
             android:paddingTop="20dp"
             android:paddingBottom="10dp"
             android:text="Subject Name:"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tvModuleName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Subject name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -101,8 +102,7 @@
                 android:paddingTop="20dp"
                 android:paddingBottom="10dp"
                 android:text="Weekly hours:"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/tvWeeklyHours"
@@ -114,46 +114,47 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <SeekBar
-            android:id="@+id/seekBarWeekHours"
-            style="@style/Widget.AppCompat.SeekBar.Discrete"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="10"
-            android:progress="5" />
-
         <TextView
             android:id="@+id/tvTeacherLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="20dp"
             android:paddingBottom="10dp"
-            android:text="Teacher"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="Teacher:"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tvTeacher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="a teacher's name" />
+            android:text="a teacher's name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="bottom"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tvLog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="TextView" />
+
+            <Button
+                android:id="@+id/btnNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Module" />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="bottom"
             android:orientation="horizontal">
 
@@ -162,6 +163,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="onFirstButtonClickCallback"
                 android:text="First" />
 
             <Button
@@ -169,6 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="onPreviousButtonClickCallback"
                 android:text="Previous" />
 
             <Button
@@ -176,6 +179,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="onNextButtonClickCallback"
                 android:text="Next" />
 
             <Button
@@ -183,6 +187,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="onLastButtonClickCallback"
                 android:text="Last" />
 
         </LinearLayout>
