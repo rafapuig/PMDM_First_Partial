@@ -22,9 +22,7 @@ public class ModuleFileDataAccessManager extends FileDataAccessManager<Modulo> {
         dos.writeInt(modulo.getCiclo().ordinal());
         dos.writeInt(modulo.getCurso().ordinal());
         //TODO: Write the remaining fields
-        dos.writeUTF(modulo.getName());
-        dos.writeInt(modulo.getWeeklyHours());
-        dos.writeUTF(modulo.getTeacherName());
+
     }
 
     @Override
@@ -36,11 +34,9 @@ public class ModuleFileDataAccessManager extends FileDataAccessManager<Modulo> {
         Curso curso = EnumSet.allOf(Curso.class).stream().filter(curso1 -> curso1.ordinal() == cursoOrdinal).findFirst().get();
 
         //TODO: read the reamining fields
-        String moduleName = dis.readUTF();
-        int weeklyHours = dis.readInt();
-        String teacherName = dis.readUTF();
+
 
         //TODO: instantiate a new Modulo object with the read values and return it
-        return new Modulo(ciclo, curso, moduleName, weeklyHours, teacherName);
+
     }
 }
