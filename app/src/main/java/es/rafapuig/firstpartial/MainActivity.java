@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     FileDataAccessManager<Modulo> dataAccessManager;
     private int currentModuleIndex = -1;
 
+    // This variable stores the index of the register to show initially when
+    // the activity starts
     private int initialModuleIndex;
 
     @Override
