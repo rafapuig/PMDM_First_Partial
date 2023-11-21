@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void initRegisterIndex() {
-        // TODO: Point to the first register in the collection
+        // TODO: Point to the register in the collection we will show initially
 
     }
 
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void showCurrentRegister() {
-        // TODO: Show in the UI data form the current register by currentModuleIndex
+        // TODO: Show in the UI data from the current register by currentModuleIndex
 
     }
 
