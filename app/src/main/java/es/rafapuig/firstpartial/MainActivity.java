@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
         // TODO: other things to do when activity enters on pause
 
+        super.onPause();
     }
 
     private void saveCurrentRegisterPositionPreference() {
@@ -90,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
             //TODO: Show current register in the UI
 
 
+            throw new IOException("REMOVE THIS SENTENCE"); // TODO: remove because is here only for avoiding compilation errors temporally
         } catch (IOException e) {
             //TODO: Show a message with the error using a Toast
 
@@ -99,11 +101,14 @@ public class MainActivity extends AppCompatActivity {
     void initRegisterIndex() {
         // TODO: Point to the first register in the collection
 
+    }
 
     Modulo getModuleFromIndex(int index) {
         // TODO: return a reference to the register located in the provided index,
         // TODO: if index is out of bounds return null
 
+
+        return null; //TODO: delete this because is here only to remove compilation error temporally
     }
 
     void showCurrentRegister() {

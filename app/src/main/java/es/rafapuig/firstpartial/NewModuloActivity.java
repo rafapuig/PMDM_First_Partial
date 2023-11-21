@@ -130,7 +130,7 @@ public class NewModuloActivity extends AppCompatActivity {
         // TODO: Instantiate a new Modulo
 
 
-        if (/* TODO: Write modulo to file (inside if condition */) {
+        if (false/* TODO: Write modulo to file (inside if condition) and remove "false" */) {
             showMessage("Module added!!!");
             clearUI();
         } else {

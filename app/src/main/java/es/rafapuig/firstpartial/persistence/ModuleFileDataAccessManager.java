@@ -38,5 +38,6 @@ public class ModuleFileDataAccessManager extends FileDataAccessManager<Modulo> {
 
         //TODO: instantiate a new Modulo object with the read values and return it
 
+        return null; //TODO: delete this because is here only to remove compilation error
     }
 }
